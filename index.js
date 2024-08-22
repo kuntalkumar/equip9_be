@@ -12,7 +12,7 @@ connectDB();
 app.use(cors());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
-aap.get("/",(re,res)=>{
+app.get("/",(re,res)=>{
     res.send("Api is working ")
 })
 app.use('/', userRoutes);
